@@ -19,7 +19,7 @@ class TodoController {
             });
         }
     }
-    async deteleTodo(req, res) {
+    async deleteTodo(req, res) {
         const { id } = req.params;
         const existingTodo = await todoService.getTodoById(id);
         if (existingTodo) {
