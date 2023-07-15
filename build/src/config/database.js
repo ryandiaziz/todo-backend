@@ -8,7 +8,7 @@ const connection = new sequelize_typescript_1.Sequelize({
     username: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.POSTGRES_DATABASE,
-    port: 7501,
+    port: 5432,
     models: [todo_model_1.Todo],
     dialect: 'postgres',
     dialectOptions: {
